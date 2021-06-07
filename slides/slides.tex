@@ -1,0 +1,121 @@
+%% If you have any problems using this template, please contact the author: %%
+%% Chris Carmona: carmona@stats.ox.ac.uk ; chriscarmona.me %%
+
+\documentclass{beamer}
+
+\usepackage[UKenglish]{babel}
+\usepackage[utf8]{inputenc} % so we can input characters with accents (e.g. ő)
+\usepackage[export]{adjustbox}
+
+%\usepackage{Presentation/Presentation_layout}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows,fadings, automata, positioning}
+\tikzfading[name=fade inside,inner color=red,outer color=blue]
+\usepackage{graphicx} % ease graphics management
+
+\usefonttheme[onlymath]{serif}
+
+%\usefonttheme{serif} % change font to allow \textbf{}
+\usepackage{amsmath,amsthm,amssymb} % for math equations
+\usepackage[square,sort,comma,numbers]{natbib} % richer citation
+\usepackage{breakcites} % avoid overfull hbox for long cites
+\definecolor{kthBlue}{RGB}{25, 84, 166}          % Oxford Blue
+\definecolor{bggrey}{RGB}{240, 240, 240}          % Oxford Blue
+
+\usepackage{bm}
+
+\usecolortheme{beaver}
+\setbeamercolor{frametitle}{fg=white,bg=kthBlue}
+\setbeamercolor{title}{fg=white,bg=kthBlue}
+\setbeamercolor{section in toc}{fg=kthBlue}
+\setbeamercolor{background canvas}{bg=bggrey}
+
+
+\DeclareMathOperator{\newdiff}{d} % use \dif instead
+\newcommand{\dif}{\newdiff\!}
+\newcommand{\fdif}[2]{\dfrac{\dif #1}{\dif #2}}
+\newcommand{\ffdif}[2]{\dfrac{\dif^2 #1}{\dif #2^2}}
+\newcommand{\fndif}[3]{\dfrac{\dif^{#3} #1}{\dif #2^{#3}}}
+
+\newcommand{\fpart}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\ffpart}[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\fnpart}[3]{\dfrac{\partial^{#3} #1}{\partial #2^{#3}}}
+
+
+%% Information (author, title, etc.) %%
+
+
+\title[Short Title]{% short title for footer
+    \color{white} Final project
+    \vspace{0.5cm}
+}
+
+\author{Miguel De Le Court}
+
+\institute{
+        \textit{Methods in High performance computing}\\
+        \textit{DD2356}
+        \vspace{0.5cm}
+}
+\date[Venue and Date]{% short date for footer
+   Stockholm, June 2021 
+}
+
+%% Content of slides %%
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%
+
+% Title slide %
+{
+    \setbeamertemplate{footline}{}
+    \setbeamertemplate{headline}{}
+    \setbeamercolor{background canvas}{bg = kthBlue}
+    \setbeamercolor{normal text}{fg=white}
+    \usebeamercolor[fg]{normal text}
+    \maketitle
+}
+
+%----------------------------%
+% Contents slide
+%\setbeamertemplate{background canvas}{\begin{tikzpicture} \node[opacity=.1]{\includegraphics[width=\paperwidth]{Figures/Presentation/KTH_camp.png}};\end{tikzpicture}}
+% only for the image:
+% Conclusions
+\begin{frame}{Outline}
+\tableofcontents
+
+\vfill
+\begin{center}
+    \footnotesize The last version of these slides and the code presented here are available at \url{https://github.com/MiguelDLC/DD2356-Project}    
+\end{center}
+
+\end{frame}
+%----------------------------%
+
+%now include the slides
+\setbeamercovered{transparent}
+%----------------------------%
+
+
+
+% Introduction
+%----------------------------%
+\section{Validation}
+\subsection{Background and recap of the events}
+\begin{frame}{Introduction}
+    \framesubtitle{The incident}
+
+    \begin{figure}
+        \centering
+        \includegraphics[height=8cm]{Figures/sol.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%
