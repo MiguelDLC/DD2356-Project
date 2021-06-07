@@ -100,11 +100,58 @@
 
 % Introduction
 %----------------------------%
-\section{Validation}
-\subsection{Background and recap of the events}
-\begin{frame}{Introduction}
-    \framesubtitle{The incident}
+\section{Structure of the code}
+\begin{frame}{Structure of the code}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/step0.pdf}
+    \end{figure}
+\end{frame}
 
+%----------------------------%
+
+\begin{frame}{Structure of the code}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/step1.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+\begin{frame}{Structure of the code}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/step2.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+\begin{frame}{Structure of the code}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/step3.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+
+\begin{frame}{Structure of the code}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/step4.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+
+\section{Validation}
+\subsection{Reference implementation}
+\begin{frame}{Validation}
+    Result computed with the MPI solver
     \begin{figure}
         \centering
         \includegraphics[height=8cm]{Figures/sol.pdf}
@@ -113,8 +160,60 @@
 
 %----------------------------%
 
+\begin{frame}{Validation}
+    \framesubtitle{Comparison with a reference implementation}
+    First validation test : check against a reference implementation
+    \begin{figure}
+        \centering
+        \includegraphics[height=8cm]{Figures/solcomp.pdf}
+    \end{figure}
+\end{frame}
 
+%----------------------------%
 
+\subsection{Comparison with the analytical solution}
+\begin{frame}{Validation}
+    \framesubtitle{Comparison with an analytical solution}
+    Second validation test : check against a reference implementation and ensure that the erro decreases as expected
+
+    \begin{figure}
+        \centering
+        \includegraphics[height=7cm]{Figures/plotconverge.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+\begin{frame}{Validation}
+    \framesubtitle{Comparison with an analytical solution}
+    Second validation test : check against a reference implementation and ensure that the erro decreases as expected
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/Convergence.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+\section{Idle propagation}
+\begin{frame}{Idle propagation}
+    \framesubtitle{Comparison with an analytical solution}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/idle_propagation.pdf}
+    \end{figure}
+\end{frame}
+
+%----------------------------%
+
+\begin{frame}{Idle propagation}
+    \framesubtitle{Comparison with an analytical solution}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/idle_propagation_small.pdf}
+    \end{figure}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%
 \end{document}
